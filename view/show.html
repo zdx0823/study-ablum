@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><?=htmlspecialchars($data['name'])?> - 在线相册</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <?php require './view/common/top.html'; ?>
+    <div class="container">
+      <div class="opt">
+        <div class="opt-ln">
+          <?php if($prev): ?><a href="?id=<?=$prev?>">上一张</a><?php else: ?><span>上一张</span><?php endif; ?>
+          <?php if($next): ?><a href="?id=<?=$next?>">下一张</a><?php else: ?><span>下一张</span><?php endif; ?>
+          <a href="./uploads/<?=$data['save']?>" target="_blank">查看原图</a>
+          <?=htmlspecialchars($data['name'])?>
+        </div>
+      </div>
+      <div class="tog">
+        <a href="./uploads/<?=$data['save']?>" target="_blank" title="查看原图"><img src="./uploads/<?=$data['save']?>"></a>
+      </div>
+    </div>
+    <?php require './view/common/footer.html'; ?>
+  </body>
+</html>

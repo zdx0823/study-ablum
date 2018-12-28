@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>搜索结果 - 在线相册</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <?php require './view/common/top.html'; ?>
+    <div class="container">
+      <div class="opt">
+        <div class="opt-search-info">关键词“<span><?=htmlspecialchars($search)?></span>”搜索结果</div>
+        <div class="opt-search">
+          <form method="get">
+            <input type="hidden" name="action" value="search">
+            <input type="text" name="search" placeholder="输入关键词" required><input type="submit" value="搜索">
+          </form>
+        </div>
+      </div>
+      <div class="album">
+        <?php if(empty($list)): ?>
+          <div class="album-tip">没有找到符合该关键词的图片。</div>
+        <?php endif; ?>
+        <!-- 图片列表 -->
+        <?php foreach($list as $v): ?>
+        <div class="album-list">
+          <div class="album-list-content">
+            <a href="show.php?id=<?=$v['id']?>"><img src="./thumbs/<?=$v['save']?>"></a>
+            <div class="album-list-desc"><p><a href="show.php?id=<?=$v['id']?>"><?=htmlspecialchars($v['name'])?></a></p></div>
+          </div>
+        </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+    <?php require './view/common/footer.html'; ?>
+  </body>
+</html>

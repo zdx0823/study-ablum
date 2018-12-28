@@ -1,0 +1,54 @@
+body{margin:0;background:#fff;color:#333;font-size:16px;font-family:'Microsoft YaHei';}
+.container{margin:0 auto;padding:0 20px;width:95%;min-width:960px;}
+.top{margin-bottom:1px;padding:0 10px;height:50px;border-bottom:1px solid #e5e5e5;line-height:50px;}
+.top-logo{float:left;}
+.top-logo h1{margin:0;letter-spacing:2px;font-weight:400;font-size:25px;}
+.top-logo h1 a{color:#23A8E0;text-decoration:none;}
+.top-nav{float:left;margin-left:30px;font-size:14px;}
+.top-nav a{color:#23A8E0;text-decoration:none;}
+.top-nav a:hover{text-decoration:underline;}
+.top-nav i:before{margin:0 6px;color:#aaa;content:">";font-style:normal;font-size:12px;font-family:airal;}
+.opt{margin:0 5px;height:46px;border-bottom:1px solid #e5e5e5;line-height:46px;}
+.opt:after{clear:both;display:block;content:"";}
+.opt input{font-size:12px;font-family:'Microsoft YaHei';}
+.opt input[type=text]{padding:4px;height:17px;border:1px solid #ccc;border-radius:2px;}
+.opt input[type=submit]{margin-left:5px;padding:0 10px;height:27px;outline:0;border:1px solid #d4d4d4;border-radius:.2em;background-color:#ececec;background-image:linear-gradient(#f4f4f4,#ececec);color:#333;text-shadow:1px 1px 0 #fff;line-height:23px;cursor:pointer;}
+.opt input[type=submit]:hover{border:1px solid #a4a4a4;}
+.opt input[type=submit]:active{background-image:linear-gradient(#ececec,#f4f4f4);}
+.opt-sort{float:left;}
+.opt-sort a{float:left;padding:0 10px;height:45px;color:#333;text-decoration:none;line-height:45px;}
+.opt-sort a:hover{color:#0097CA;}
+.opt-sort a.curr{border-bottom:2px solid #00A7DA;color:#333;}
+.opt-new{float:left;margin-left:16px;padding-right:20px;border-right:1px dotted #ccc;}
+.opt-new input[type=text]{width:120px;}
+.opt-upload{float:left;margin-left:20px;padding-right:20px;border-right:1px dotted #ccc;}
+.opt-upload input[type=file]{width:238px;}
+.opt-search{float:left;margin-left:20px;}
+.opt-search input[type=text]{width:120px;}
+.opt-search-info{float:left;margin-left:16px;padding-right:40px;}
+.opt-search-info span{color:#EB1C27;}
+.album{margin-top:5px;}
+.album:after{clear:both;display:block;content:"";}
+.album-tip{margin:22px;}
+.album-list{position:relative;float:left;margin:.5%;width:19%;background:#F6F6F6;}
+.album-list:after{display:block;padding-bottom:100%;content:"";}
+.album-list-content{position:absolute;box-sizing:border-box;width:100%;height:100%;}
+.album-list-content img{width:100%;height:100%;}
+.album-list-desc{position:absolute;bottom:0;width:100%;height:50px;line-height:55px;}
+.album-list-desc:before{position:absolute;display:block;width:100%;height:100%;background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.5) 100%);content:"";opacity:.6;transition:opacity .2s;}
+.album-list:hover .album-list-desc:before{opacity:1;}
+.album-list-desc p{position:absolute;overflow:hidden;box-sizing:border-box;margin-top:16px;padding:0 10px;width:100%;color:#fff;text-overflow:ellipsis;text-shadow:1px 1px 3px rgba(0,0,0,.7);letter-spacing:1px;line-height:normal;}
+.album-list-desc a{color:#fff;text-decoration:none;text-shadow:1px 1px 3px rgba(0,0,0,.7);}
+.album-list-desc a:hover{text-decoration:underline;}
+.album-list-opt{position:absolute;top:0;right:0;padding:3%;background-color:rgba(255,255,255,.5);text-align:right;font-size:12px;opacity:0;}
+.album-list:hover .album-list-opt{opacity:1;transition:opacity .2s;}
+.album-list-opt button{margin:0 4px;padding:0;outline:0;border:0;background:0 0;color:#23A8E0;text-shadow:1px 1px 3px rgba(255,255,255,.9);cursor:pointer;}
+.album-list-opt button:hover{color:#EB1C27;}
+.album-dir .album-list-content{border:1px dotted #53D8F0;}
+.album-list-tips{position:absolute;top:10px;left:10px;padding:4px 8px;border:1px solid #fff;border-radius:6px;background-color:#33B8E0;color:#fff;letter-spacing:2px;font-size:12px;cursor:default;}
+.opt-ln{font-size:14px;}
+.opt-ln a{margin-right:15px;color:#23A8E0;text-decoration:none;}
+.opt-ln a:hover{text-decoration:underline;}
+.opt-ln span{margin-right:15px;}
+.tog{margin-top:10px;padding-bottom:40px;text-align:center;}
+.tog img{max-width:100%;}
